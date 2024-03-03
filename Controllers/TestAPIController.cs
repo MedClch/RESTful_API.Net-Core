@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
 using Tutoriel.Data;
 using Tutoriel.DTOs;
 using Tutoriel.Models;
@@ -80,7 +81,30 @@ namespace Tutoriel.Controllers
             }
             var villa = VillaStore.villaList.FirstOrDefault(v => v.Id==id);
             villa.Name = newVilla.Name;
-            return Ok();
+            return NoContent();
+        }
+
+        [HttpPatch("{id:int}", Name = "UpdatePartVilla")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult UpdaePartVilla(int id,JsonPatchDocument<VillaDTO> patchDocument)
+        {
+            if (patchDocument==null||id==0)
+            {
+                return BadRequest();
+            }
+            var villa = VillaStore.villaList.FirstOrDefault(v => v.Id==id);
+            if (villa==null)
+            {
+                return BadRequest();
+            }
+            patchDocument.ApplyTo(villa,ModelState);
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            return NoContent();
+
         }
     }
 }
