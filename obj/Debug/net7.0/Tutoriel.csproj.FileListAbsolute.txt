@@ -33,3 +33,5 @@ C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\Tutoriel.ge
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\ref\Tutoriel.dll
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

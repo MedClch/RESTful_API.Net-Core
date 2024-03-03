@@ -87,7 +87,7 @@ namespace Tutoriel.Controllers
         [HttpPatch("{id:int}", Name = "UpdatePartVilla")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult UpdaePartVilla(int id,JsonPatchDocument<VillaDTO> patchDocument)
+        public IActionResult UpdatePartVilla(int id,JsonPatchDocument<VillaDTO> patchDocument)
         {
             if (patchDocument==null||id==0)
             {
