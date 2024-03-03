@@ -31,3 +31,5 @@ C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\refint\Tuto
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\Tutoriel.pdb
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\Tutoriel.genruntimeconfig.cache
 C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\obj\Debug\net7.0\ref\Tutoriel.dll
+C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dell\Desktop\Tutoriel\TutorielApp\Tutoriel\bin\Debug\net7.0\Newtonsoft.Json.dll
